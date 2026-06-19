@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+/* 1. Import the font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* 2. Map it to a Tailwind variable */
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/* * {
+  cursor: none;
+} */
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  z-index: 9999;
+  background-color: black;
+}
+
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
